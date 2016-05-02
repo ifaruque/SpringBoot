@@ -1,1 +1,2 @@
-com\javaaround\springboot\controllers\DemoApplication.class
+com\javaaround\springboot\controllers\HelloController.class
+com\javaaround\springboot\configuration\AppConfiguration.class
