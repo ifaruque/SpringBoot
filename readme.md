@@ -19,7 +19,7 @@ command for creating web app <br>
 <b>spring init -d=web SpringBoot</b> <br>
 
 <b>Run Boot Application following way:</b> <br/>
-1.mvn spring-boot:run <br/>
+1.<b>mvn spring-boot:run </b><br/>
 2. by creating executable jar <br/>
-mvn package <br/>
-java -jar target/SpringBoot-0.0.1-SNAPSHOT.jar
+<b>mvn package <br/>
+java -jar target/SpringBoot-0.0.1-SNAPSHOT.jar </b>
