@@ -12,11 +12,11 @@ installation guide: [a link] http://docs.spring.io/spring-boot/docs/current/refe
 
 <b>Spring Boot Application:</b> <br/>
 To see some info of creating spring boot app run <br>
-spring help<br/>
-then spring help init <br>
+<b>spring help</b><br/>
+<b>spring help init</b> <br>
 You see how to create app <br>
 command for creating web app <br>
-spring init -d=web SpringBoot <br>
+<b>spring init -d=web SpringBoot</b> <br>
 
 <b>Run Boot Application following way:</b> <br/>
 1.mvn spring-boot:run <br/>
