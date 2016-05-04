@@ -23,3 +23,11 @@ command for creating web app <br>
 2. by creating executable jar <br/>
 <b>mvn package <br/>
 java -jar target/SpringBoot-0.0.1-SNAPSHOT.jar </b>
+<b>Testing Application</b> <br/>
+You can start Spring Application Test in the two ways: <br/>
+1 . MockMvc  <br/>
+2 . RestTemplate <br/>
+
+<b>Run Boot Application Test:</b> <br/>
+1.<b>mvn spring-boot:run </b><br/>
+1.<b>mvn test </b><br/>
