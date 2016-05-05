@@ -53,7 +53,7 @@ public class HelloControllerTest {
 				.andExpect(status().isOk())
 				.andExpect(content().string(equalTo("Hello Wor")));*/
 		ResponseEntity<String> response = template.getForEntity(base.toString(), String.class);
-		assertThat(response.getBody(), equalTo("Hello World!"));
+		assertThat(response.getBody(), equalTo("Hello World"));
 	
 	}
 	
