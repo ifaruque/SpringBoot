@@ -31,3 +31,12 @@ You can start Spring Application Test in the two ways: <br/>
 <b>Run Boot Application Test:</b> <br/>
 1.<b>mvn spring-boot:run </b><br/>
 1.<b>mvn test </b><br/>
+
+<b>Run Boot Built in Starter project</b> <br/>
+1.spring-boot-starter-actuator : <br>
+Why : for add management services(errors, environment, health, beans, info, metrics, trace, configprops, and dump.) </br>
+How : <dependency></br>
+            <groupId>org.springframework.boot</groupId></br>
+            <artifactId>spring-boot-starter-actuator</artifactId></br>
+        </dependency></br>
+

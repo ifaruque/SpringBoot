@@ -34,6 +34,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- for add management services(errors, environment, health, beans, info, metrics, trace, configprops, and dump.) -->
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 	</dependencies>
 	
 	<build>
@@ -54,6 +59,8 @@
 	                <!--<outputDirectory>${basedir}/target/newsite</outputDirectory>-->
 				</configuration>
 			</plugin>
+
+
 		</plugins>
 		
 	</build>
