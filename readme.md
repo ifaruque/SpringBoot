@@ -17,7 +17,7 @@ To see some info of creating spring boot app run <br>
 <b>spring help init</b> <br>
 You see how to create app <br>
 command for creating web app <br>
-<b>spring init -d=web SpringBoot</b> <br>
+<b>spring init -n=spring-boot -g=com.javaaround --package-name=com.javaaround.boot -d=web springbootapp</b> <br>
 
 <b>Run Boot Application following way:</b> <br/>
 1.<b>mvn spring-boot:run </b><br/>
