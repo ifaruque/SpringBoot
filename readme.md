@@ -31,6 +31,71 @@ Give following command
 	4. --build = specify build system gradle or maven.default maven
 	springbootapp == project root name
 
+Create HelloController.java at src/main/java/com/javaaround/springboot/controller
+
+```java
+package com.javaaround.springboot.controller;
+
+import org.springframework.boot.*;
+import org.springframework.boot.autoconfigure.*;
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+public class HelloController {
+
+	@RequestMapping("/hello")
+	public String home() {
+		return "Hello World!";
+	}
+	
+}
+ 
+```
+
+Explanation : 
+
+1. @RestController : meaning it’s ready for use by Spring MVC to handle web requests.
+2. @RequestMapping : maps / to the index() method by browser
+
+
+Create Application.java at src/main/java/com/javaaround/springboot/controller
+
+```java
+package com.javaaround.springboot;
+
+import java.util.Arrays;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+@SpringBootApplication // same as @Configuration @EnableAutoConfiguration @ComponentScan
+public class Application  {
+
+	public static void main(String[] args) {
+		ApplicationContext ctx = SpringApplication.run(Application.class, args);
+		System.out.println("Let's inspect the beans provided by Spring Boot:");
+
+        String[] beanNames = ctx.getBeanDefinitionNames();
+        Arrays.sort(beanNames);
+        for (String beanName : beanNames) {
+            System.out.println(beanName);
+        }
+	}
+
+}
+```
+
+Explanation : 
+
+1. @SpringBootApplication : adds all of the following setting
+	1. @Configuration : marks the class as a source of bean definitions for the application context.
+	2. @EnableAutoConfiguration : tells Spring Boot to start adding beans based on classpath settings, other beans, and various property settings.
+	3. @EnableWebMvc : marks  the application as a web application and activates key behaviors such as setting up a DispatcherServlet. Normally you would add @EnableWebMvc for a Spring MVC app, but Spring Boot adds it automatically when it sees spring-webmvc on the classpath
+	4. @ComponentScan : tells Spring to look for other components, configurations, and services in the com.javaaround.springboot package, allowing it to find the controllers.
+2. @RequestMapping : maps / to the index() method by browser
+
+
 ### How to run app two way ###
 1. Maven
 	1. mvn spring-boot:run
