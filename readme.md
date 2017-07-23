@@ -56,7 +56,7 @@ public class HelloController {
 Explanation : 
 
 1. @RestController : meaning it’s ready for use by Spring MVC to handle web requests.
-2. @RequestMapping : maps / to the index() method by browser
+2. @RequestMapping : maps '/'' to the 'index()' method by browser
 
 
 Create Application.java at src/main/java/com/javaaround/springboot/controller
@@ -93,7 +93,6 @@ Explanation :
 	2. @EnableAutoConfiguration : tells Spring Boot to start adding beans based on classpath settings, other beans, and various property settings.
 	3. @EnableWebMvc : marks  the application as a web application and activates key behaviors such as setting up a DispatcherServlet. Normally you would add @EnableWebMvc for a Spring MVC app, but Spring Boot adds it automatically when it sees spring-webmvc on the classpath
 	4. @ComponentScan : tells Spring to look for other components, configurations, and services in the com.javaaround.springboot package, allowing it to find the controllers.
-2. @RequestMapping : maps / to the index() method by browser
 
 
 ### How to run app two way ###
