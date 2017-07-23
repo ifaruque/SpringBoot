@@ -1,31 +1,45 @@
-<b>Spring Boot Features : </b>
+### Spring Boot Features : ###
+
 1. Create stand-alone Spring applications 
 2. Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files) wow!! 
 3. Groovy support, allowing you to build Spring MVC web apps with as little as a single file.
 4. no need single line of XML even No web.xml file either. This web application is 100% pure Java and you didn’t have to deal with configuring any plumbing or infrastructure.
 
-<b>How to start : </b><br/>
-You can start Spring Boot Application in the following ways: <br/>
-1.Spring Boot CLI<(recommemded 	way)  : 
-installation guide: [a link] http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started-installing-the-cli <br/>
-2.Spring Boot Web Interface<br/>(http://start.spring.io)  : <br/>
-3. Use IDEs/IDE Plugin like STS,Netbeans,IntelljIdea<br/>
-4.Use Thirdparty Tool like cURL,HTTPie
+### Environment setup : ###
 
-<b>Spring Boot Application:</b> <br/>
-To see some info of creating spring boot app run <br>
+You can start Spring Boot Application in the following ways: <br/>
+
+1. Spring Boot CLI<(recommemded 	way)  : 
+installation guide: [a link] http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started-installing-the-cli <br/>
+2. Spring Boot Web Interface<br/>(http://start.spring.io)  : <br/>
+3. Use IDEs/IDE Plugin like STS,Netbeans,IntelljIdea<br/>
+4. Use Thirdparty Tool like cURL,HTTPie
+
+### Create Spring Boot App ###
+
+See some help <br>
 <b>spring help</b><br/>
 <b>spring help init</b> <br>
-You see how to create app <br>
-command for creating web app <br>
-<b>spring init -n=spring-boot -g=com.javaaround --package-name=com.javaaround.boot -d=web springbootapp</b> <br>
 
-<b>Run Boot Application following way:</b> <br/>
-1.<b>mvn spring-boot:run </b><br/>
-2. by creating executable jar <br/>
-<b>mvn package <br/>
-java -jar target/SpringBoot-0.0.1-SNAPSHOT.jar </b>
-<b>Testing Application</b> <br/>
+Give following command
+
+`spring init -n=spring-boot -g=com.javaaround --package-name=com.javaaround.boot -d=web --build=maven springbootapp`
+
+	1. -n = application name
+	2. -g = groupId
+	3. -d = dependency specify by comma
+	4. --build = specify build system gradle or maven.default maven
+	springbootapp == project root name
+
+### How to run app two way ###
+1. mvn spring-boot:run 
+
+2. by creating executable jar 
+	1. mvn package 
+	2. java -jar target/SpringBoot-0.0.1-SNAPSHOT.jar 
+
+### Testing Application ###
+
 You can start Spring Application Test in the two ways: <br/>
 1 . MockMvc  <br/>
 2 . RestTemplate <br/>
