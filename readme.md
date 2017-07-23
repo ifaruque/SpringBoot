@@ -1,4 +1,4 @@
-### Spring Boot Features : ###
+### Spring Boot Benefits : ###
 
 1. Create stand-alone Spring applications 
 2. Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files) wow!! 
@@ -32,12 +32,14 @@ Give following command
 	springbootapp == project root name
 
 ### How to run app two way ###
-1. mvn spring-boot:run 
-
-2. by creating executable jar 
-	1. mvn package 
-	2. java -jar target/SpringBoot-0.0.1-SNAPSHOT.jar 
-
+1. Maven
+	1. mvn spring-boot:run
+	2. mvn package && java -jar target/SpringBoot-0.0.1-SNAPSHOT.jar
+2. Gradle
+	1. gradle bootRun
+	2. gradlew build && java -jar build/libs/gs-spring-boot-0.1.0.jar
+ 
+	
 ### Testing Application ###
 
 You can start Spring Application Test in the two ways: <br/>
