@@ -1,7 +1,8 @@
-<b>Spring Boot Features : </b><br/>
-1.Create stand-alone Spring applications <br/>
-2.Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files) wow!! <br/>
-2.Groovy support, allowing you to build Spring MVC web apps with as little as a single file.<br/>
+<b>Spring Boot Features : </b>
+1. Create stand-alone Spring applications 
+2. Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files) wow!! 
+3. Groovy support, allowing you to build Spring MVC web apps with as little as a single file.
+4. no need single line of XML even No web.xml file either. This web application is 100% pure Java and you didn’t have to deal with configuring any plumbing or infrastructure.
 
 <b>How to start : </b><br/>
 You can start Spring Boot Application in the following ways: <br/>
