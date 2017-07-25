@@ -159,7 +159,7 @@ Add below maven plugin for create executable jar/war
 ```
 
 ### Application Properties ###
-Properties are used to set values like: server-port number, database connection configuration etc.
+Properties are used to set values like: server-port number, database connection configuration etc. it reside at /resources/application.properties
 
 <table class="alt">
     <tbody><tr>
@@ -328,6 +328,19 @@ Properties are used to set values like: server-port number, database connection 
         <td>It is used to enable basic authentication.</td>
     </tr>
 </tbody></table>
+
+Update Application.properties
+
+```properties
+spring.application.name=Spring Boot App
+server.context-path = /myapp
+server.port = 2017
+
+```
+
+Browse App now
+
+http://localhost:2017/myapp/hello
 
 ### Testing Application ###
 
