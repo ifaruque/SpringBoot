@@ -107,6 +107,20 @@ Explanation :
 ### Browse App ###
 http://localhost:8080/hello
 	
+### Dependency management ###
+
+Spring Boot manages dependencies and configuration automatically. You don't need to specify version for any of that starter dependencies. 
+```xml
+<parent>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-parent</artifactId>
+	<version>2.0.0.BUILD-SNAPSHOT</version>
+</parent>
+```
+only need to specify the Spring Boot version number above parent setting. If you import additional starters, you need not include the version number.
+
+
+
 ### Testing Application ###
 
 You can start Spring Application Test in the two ways: <br/>
