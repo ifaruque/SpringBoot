@@ -158,6 +158,177 @@ Add below maven plugin for create executable jar/war
 </build>
 ```
 
+### Application Properties ###
+Properties are used to set values like: server-port number, database connection configuration etc.
+
+<table class="alt">
+    <tbody><tr>
+        <th>Property</th>
+        <th>Default value</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>banner.charset</td>
+        <td>UTF-8</td>
+        <td>It is used to set banner file encoding.</td>
+    </tr>
+    <tr>
+        <td>banner.location</td>
+        <td>classpath:banner.txt</td>
+        <td>It is used to set banner file location.</td>
+    </tr>
+    <tr>
+        <td>logging.file</td>
+        <td></td>
+        <td>It is used to set log file name. For example data.log.</td>
+    </tr>
+    <tr>
+        <td>spring.application.index</td>
+        <td></td>
+        <td>It is used to set application index.</td>
+    </tr>
+    <tr>
+        <td>spring.application.name</td>
+        <td></td>
+        <td>It is used to set application name.</td>
+    </tr>
+    <tr>
+        <td>spring.application.admin.enabled</td>
+        <td>false</td>
+        <td>It is used to enable admin features for the application.</td>
+    </tr>
+    <tr>
+        <td>spring.config.location</td>
+        <td></td>
+        <td>It is used to config file locations.</td>
+    </tr>
+    <tr>
+        <td>spring.config.name</td>
+        <td>application</td>
+        <td>It is used to set config file name.</td>
+    </tr>
+    <tr>
+        <td>spring.mail.default-encoding</td>
+        <td>UTF-8</td>
+        <td>It is used to set default MimeMessage encoding.</td>
+    </tr>
+    <tr>
+        <td>spring.mail.host</td>
+        <td></td>
+        <td>It is used to set SMTP server host. For example smtp.example.com.</td>
+    </tr>
+    <tr>
+        <td>spring.mail.password</td>
+        <td></td>
+        <td>It is used to set login password of the SMTP server.</td>
+    </tr>
+    <tr>
+        <td>spring.mail.port</td>
+        <td></td>
+        <td>It is used to set SMTP server port.</td>
+    </tr>
+    <tr>
+        <td>spring.mail.test-connection</td>
+        <td>false</td>
+        <td>It is used to test that the mail server is available on startup.</td>
+    </tr>
+    <tr>
+        <td>spring.mail.username</td>
+        <td></td>
+        <td>It is used to set login user of the SMTP server.</td>
+    </tr>
+    <tr>
+        <td>spring.main.sources</td>
+        <td></td>
+        <td>It is used to set sources for the application.</td>
+    </tr>
+    <tr>
+        <td>server.address</td>
+        <td></td>
+        <td>It is used to set network address to which the server should bind to.</td>
+    </tr>
+    <tr>
+        <td>server.connection-timeout</td>
+        <td></td>
+        <td>It is used to set time in milliseconds that connectors will wait for another HTTP request before closing the connection.</td>
+    </tr>
+    <tr>
+        <td>server.context-path</td>
+        <td></td>
+        <td>It is used to set context path of the application.</td>
+    </tr>
+    <tr>
+        <td>server.port</td>
+        <td>8080</td>
+        <td>It is used to set HTTP port.</td>
+    </tr>
+    <tr>
+        <td>server.server-header</td>
+        <td></td>
+        <td>It is used for the Server response header (no header is sent if empty)</td>
+    </tr>
+    <tr>
+        <td>server.servlet-path</td>
+        <td>/</td>
+        <td>It is used to set path of the main dispatcher servlet</td>
+    </tr>
+    <tr>
+        <td>server.ssl.enabled</td>
+        <td></td>
+        <td>It is used to enable SSL support.</td>
+    </tr>
+    <tr>
+        <td>spring.http.multipart.enabled</td>
+        <td>True</td>
+        <td>It is used to enable support of multi-part uploads.</td>
+    </tr>
+    <tr>
+        <td>spring.http.multipart.max-file-size</td>
+        <td>1MB</td>
+        <td>It is used to set max file size.</td>
+    </tr>
+    <tr>
+        <td>spring.mvc.async.request-timeout</td>
+        <td></td>
+        <td>It is used to set time in milliseconds.</td>
+    </tr>
+    <tr>
+        <td>spring.mvc.date-format</td>
+        <td></td>
+        <td>It is used to set date format. For example dd/MM/yyyy.</td>
+    </tr>
+    <tr>
+        <td>spring.mvc.locale</td>
+        <td></td>
+        <td>It is used to set locale for the application.</td>
+    </tr>
+    <tr>
+        <td>spring.social.facebook.app-id</td>
+        <td></td>
+        <td>It is used to set application's Facebook App ID.</td>
+    </tr>
+    <tr>
+        <td>spring.social.linkedin.app-id</td>
+        <td></td>
+        <td>It is used to set application's LinkedIn App ID.</td>
+    </tr>
+    <tr>
+        <td>spring.social.twitter.app-id</td>
+        <td></td>
+        <td>It is used to set application's Twitter App ID.</td>
+    </tr>
+    <tr>
+        <td>security.basic.authorize-mode</td>
+        <td>role</td>
+        <td>It is used to set security authorize mode to apply.</td>
+    </tr>
+    <tr>
+        <td>security.basic.enabled</td>
+        <td>true</td>
+        <td>It is used to enable basic authentication.</td>
+    </tr>
+</tbody></table>
+
 ### Testing Application ###
 
 You can start Spring Application Test in the two ways: <br/>
