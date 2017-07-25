@@ -75,13 +75,7 @@ public class Application  {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(Application.class, args);
-		System.out.println("Let's inspect the beans provided by Spring Boot:");
-
-        String[] beanNames = ctx.getBeanDefinitionNames();
-        Arrays.sort(beanNames);
-        for (String beanName : beanNames) {
-            System.out.println(beanName);
-        }
+		
 	}
 
 }
@@ -106,7 +100,29 @@ Explanation :
 
 ### Browse App ###
 http://localhost:8080/hello
-	
+
+### Console Application(Non Web) ###
+To create a non-web application, implements CommandLineRunner and override the run method. We used lambda expression
+
+Update Application.java
+
+```java
+@Bean
+public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+    return args -> {
+
+        System.out.println("Let's inspect the beans provided by Spring Boot:");
+
+        String[] beanNames = ctx.getBeanDefinitionNames();
+        Arrays.sort(beanNames);
+        for (String beanName : beanNames) {
+            System.out.println(beanName);
+        }
+
+    };
+}
+```
+
 ### Dependency management ###
 
 Spring Boot manages dependencies and configuration automatically. You don't need to specify version for any of that starter dependencies. 
@@ -126,6 +142,20 @@ Changing java version
 	<java.version>1.8</java.version>
 </properties>
 
+```
+
+Add below maven plugin for create executable jar/war
+
+```xml
+<build>
+    <plugins>
+        <!-- Package as an executable jar/war -->
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
 ```
 
 ### Testing Application ###
