@@ -4,6 +4,7 @@
 2. Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files) wow!! 
 3. Groovy support, allowing you to build Spring MVC web apps with as little as a single file.
 4. no need single line of XML even No web.xml file either. This web application is 100% pure Java and you didn’t have to deal with configuring any plumbing or infrastructure.
+5. Spring Boot manages dependencies and configuration automatically. You don't need to specify version for any of that dependencies.Spring Boot upgrades all dependencies automatically when you upgrade Spring Boot.
 
 ### Environment setup : ###
 
@@ -102,7 +103,9 @@ Explanation :
 2. Gradle
 	1. gradle bootRun
 	2. gradlew build && java -jar build/libs/gs-spring-boot-0.1.0.jar
- 
+
+### Browse App ###
+http://localhost:8080/hello
 	
 ### Testing Application ###
 
