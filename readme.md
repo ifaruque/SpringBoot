@@ -119,7 +119,14 @@ Spring Boot manages dependencies and configuration automatically. You don't need
 ```
 only need to specify the Spring Boot version number above parent setting. If you import additional starters, you need not include the version number.
 
+Changing java version
 
+```xml
+<properties>
+	<java.version>1.8</java.version>
+</properties>
+
+```
 
 ### Testing Application ###
 
