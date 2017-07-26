@@ -342,6 +342,8 @@ Browse App now
 
 http://localhost:2017/myapp/hello
 
+### @ConfigurationProperties ###
+[See details](http://www.mkyong.com/spring-boot/spring-boot-configurationproperties-example/)
 ### Spring Boot Starters ###
 
 Spring Boot provides built-in starters which makes development easier and rapid.Starter should follow a naming pattern like: `spring-boot-starter-*`, where * is a particular type of application.
@@ -520,6 +522,7 @@ Spring Boot provides built-in starters which makes development easier and rapid.
         <td>It is used for exposing Spring Data repositories over REST using Spring Data REST.</td>
     </tr>
 </tbody></table>
+
 
 
 
